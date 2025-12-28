@@ -64,3 +64,22 @@ console.log(typeof year);
 year = 1991;
 console.log(year);
 console.log(typeof year);
+
+
+// 3. What to use to declare variables -- let, const, var
+
+let age = 30;
+age = 31;
+
+// const is used to describe variable that will not change
+
+const birthYear = 1991;
+birthYear = 1990; // error
+
+const firstJob; // error
+
+// the var keyword should be completely avoided 
+
+var myAge = 24;
+myAge = 25;
+
