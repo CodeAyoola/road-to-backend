@@ -1,131 +1,152 @@
-// 1. Values and Variables
+// // 1. Values and Variables
 
-let js = "amazing";
+// let js = "amazing";
 
-console.log(40 + 8 + 23 - 10);
+// console.log(40 + 8 + 23 - 10);
 
-console.log('Jonas');
-console.log(23);
+// console.log('Jonas');
+// console.log(23);
 
-let firstName = 'Jonas';
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+// let firstName = 'Jonas';
+// console.log(firstName);
+// console.log(firstName);
+// console.log(firstName);
 
-// Variable name convention
-let jonas_matilda = 'JM';
-let $function = 27;
+// // Variable name convention
+// let jonas_matilda = 'JM';
+// let $function = 27;
 
-let person = 'jonas';
-let PI = 3.1413;
+// let person = 'jonas';
+// let PI = 3.1413;
 
-// make sure your variable names are descriptive 
+// // make sure your variable names are descriptive
 
-let myFirstJob = 'Programmer'
-let myCurrentJob = 'Teacher'
+// let myFirstJob = 'Programmer'
+// let myCurrentJob = 'Teacher'
 
-// better than 
+// // better than
 
-let job1 = 'Programmer'
-let job2 = 'Teacher'
-
-
-// 2. Data Types
-
-// There are 7 primitive data types
-// 1. Number -- let age = 23
-// 2. String -- let firstName = 'Jonas'
-// 3. Boolean -- ler fullAge = true;
-// 4. Undefined -- let children;
-// 5. Null
-// 6. Symbol
-// 7. BigInt
+// let job1 = 'Programmer'
+// let job2 = 'Teacher'
 
 
+// // 2. Data Types
 
-true;
-console.log(true)
-let javascriptIsFun = true;
-console.log(typeof javascriptIsFun);
-
-console.log(typeof true);
-console.log(typeof javascriptIsFun);
-console.log(typeof 23);
-console.log(typeof 'Jonas');
-
-// re assigning a variable without the let 
-javascriptIsFun = 'YES!'
-console.log(typeof javascriptIsFun);
-
-let year;
-console.log(year);
-console.log(typeof year);
-
-year = 1991;
-console.log(year);
-console.log(typeof year);
+// // There are 7 primitive data types
+// // 1. Number -- let age = 23
+// // 2. String -- let firstName = 'Jonas'
+// // 3. Boolean -- ler fullAge = true;
+// // 4. Undefined -- let children;
+// // 5. Null
+// // 6. Symbol
+// // 7. BigInt
 
 
-// 3. What to use to declare variables -- let, const, var
 
-let age = 30;
-age = 31;
+// true;
+// console.log(true)
+// let javascriptIsFun = true;
+// console.log(typeof javascriptIsFun);
 
-// const is used to describe variable that will not change
+// console.log(typeof true);
+// console.log(typeof javascriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'Jonas');
 
-const birthYear = 1991;
-birthYear = 1990; // error
+// // re assigning a variable without the let
+// javascriptIsFun = 'YES!'
+// console.log(typeof javascriptIsFun);
 
-const firstJob; // error
+// let year;
+// console.log(year);
+// console.log(typeof year);
 
-// the var keyword should be completely avoided 
-
-var myAge = 24;
-myAge = 25;
-
-
-// 4. Basic Operators
-
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJonas);
-console.log(ageSarah);
-
-console.log(ageJonas * 2, ageJonas / 10);
-
-const firstName = "Jonas";
-const lastName = "Schmedtmann";
-console.log(firstName + ' ' + lastName);
-
-// 4. Assignment Operator 
-
-let x = 10 + 5; // x = 15
-x += 10; // what this means - x = x + 10 = 25
-x *= 4; // x = x * 4 = 100
-x++; // x = x + 1 = 101
-x--; // x = x - 1 = 100
-console.log(x);
-
-// Comparison Operator
-
-console.log(ageJonas > ageSarah);
-console.log(ageSarah >= 18);
-
-const isFullAge = ageSarah >= 18;
+// year = 1991;
+// console.log(year);
+// console.log(typeof year);
 
 
-// 5. Operator Precedence
+// // 3. What to use to declare variables -- let, const, var
 
-console.log(now - 1991 > now - 2018);
-console.log(25 - 10 - 5);
+// let age = 30;
+// age = 31;
 
-let x, y;
-x = y = 25 - 10 - 5;
-console.log(x, y);
+// // const is used to describe variable that will not change
 
-const averageAge = (ageJonas + ageSarah) / 2;
-console.log(ageJonas, ageJonas, averageAge);
+// const birthYear = 1991;
+// birthYear = 1990; // error
+
+// const firstJob; // error
+
+// // the var keyword should be completely avoided
+
+// var myAge = 24;
+// myAge = 25;
 
 
-// First Coding Challenge
+// // 4. Basic Operators
+
+// const now = 2037;
+// const ageJonas = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageJonas);
+// console.log(ageSarah);
+
+// console.log(ageJonas * 2, ageJonas / 10);
+
+// const firstName = "Jonas";
+// const lastName = "Schmedtmann";
+// console.log(firstName + ' ' + lastName);
+
+// // 4. Assignment Operator
+
+// let x = 10 + 5; // x = 15
+// x += 10; // what this means - x = x + 10 = 25
+// x *= 4; // x = x * 4 = 100
+// x++; // x = x + 1 = 101
+// x--; // x = x - 1 = 100
+// console.log(x);
+
+// // Comparison Operator
+
+// console.log(ageJonas > ageSarah);
+// console.log(ageSarah >= 18);
+
+// const isFullAge = ageSarah >= 18;
+
+
+// // 5. Operator Precedence
+
+// console.log(now - 1991 > now - 2018);
+// console.log(25 - 10 - 5);
+
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
+
+// const averageAge = (ageJonas + ageSarah) / 2;
+// console.log(ageJonas, ageJonas, averageAge);
+
+
+// // First Coding Challenge
+
+let markMass = 78;
+let johnMass = 92;
+let markHeight = 1.69;
+let johnHeight = 1.95;
+
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight ** 2);
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+
+
+
+markMass = 95;
+johnMass = 85;
+markHeight = 1.88;
+johnHeight = 1.76;
+
+console.log(markBMI, johnBMI, markHigherBMI);
