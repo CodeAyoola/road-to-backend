@@ -130,23 +130,39 @@
 
 // // First Coding Challenge
 
-let markMass = 78;
-let johnMass = 92;
-let markHeight = 1.69;
-let johnHeight = 1.95;
+// let markMass = 78;
+// let johnMass = 92;
+// let markHeight = 1.69;
+// let johnHeight = 1.95;
 
-const markBMI = markMass / (markHeight ** 2);
-const johnBMI = johnMass / (johnHeight ** 2);
+// const markBMI = markMass / (markHeight ** 2);
+// const johnBMI = johnMass / (johnHeight ** 2);
 
-const markHigherBMI = markBMI > johnBMI;
+// const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// console.log(markBMI, johnBMI, markHigherBMI);
 
 
 
-markMass = 95;
-johnMass = 85;
-markHeight = 1.88;
-johnHeight = 1.76;
+// markMass = 95;
+// johnMass = 85;
+// markHeight = 1.88;
+// johnHeight = 1.76;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// console.log(markBMI, johnBMI, markHigherBMI);
+
+
+
+// STRINGS AND TEMPLATE LITERALS
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old' + job + '!';
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear}, years old ${job}!`
+
+console.log(jonas, jonasNew)
+
