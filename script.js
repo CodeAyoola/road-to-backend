@@ -268,25 +268,54 @@
 
 // Equality Operator
 
-const age = 18;
-if (age === 18) console.log(`You just became an adult 😊`);
+// const age = 18;
+// if (age === 18) console.log(`You just became an adult 😊`);
 
-// === is the strict equality operator, it does not do the type coercion
+// // === is the strict equality operator, it does not do the type coercion
 
-const favourite = Number(prompt(`What's is your favourite number ?`));
-console.log(favourite);
-console.log(typeof favourite);
+// const favourite = Number(prompt(`What's is your favourite number ?`));
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if (favourite === 23) {
-    console.log(`Cool 23 is an amazing number!`)
-} else if (favourite === 7) {
-    console.log(`7 is also a cool number`)
+// if (favourite === 23) {
+//     console.log(`Cool 23 is an amazing number!`)
+// } else if (favourite === 7) {
+//     console.log(`7 is also a cool number`)
+// } else {
+//     console.log(`Number is not 23 or 7`
+//     )
+// }
+
+// if (favourite !== 23) {
+//     console.log
+//         (`Why not the 23`)
+// }
+
+
+// Boolean Logic  
+// Logical Operator
+
+const hasDriverLicense = true; // A
+const hasGoodVison = true; // B
+
+console.log(hasDriverLicense && hasGoodVison);
+console.log(hasDriverLicense || hasGoodVison);
+console.log(!hasDriverLicense && hasGoodVison);
+
+
+
+// if (hasDriverLicense && hasGoodVison) {
+//     console.log(`Sarah should drive!`)
+// } else {
+//     console.log(`Someone else should drive...`)
+// }
+
+const isTired = false // C
+
+console.log(hasDriverLicense || hasGoodVison || isTired);
+
+if (hasDriverLicense && hasGoodVison && !isTired) {
+    console.log(`Sarah should drive!`)
 } else {
-    console.log(`Number is not 23 or 7`
-    )
-}
-
-if (favourite !== 23) {
-    console.log
-        (`Why not the 23`)
+    console.log(`Someone else should drive...`)
 }
