@@ -191,33 +191,50 @@
 
 // Second Coding Challenge
 
-let markMass = 78;
-let johnMass = 92;
-let markHeight = 1.69;
-let johnHeight = 1.95;
+// let markMass = 78;
+// let johnMass = 92;
+// let markHeight = 1.69;
+// let johnHeight = 1.95;
 
-const markBMI = Math.trunc(markMass / (markHeight ** 2));
-const johnBMI = Math.trunc(johnMass / (johnHeight ** 2));
+// const markBMI = Math.trunc(markMass / (markHeight ** 2));
+// const johnBMI = Math.trunc(johnMass / (johnHeight ** 2));
 
-const markHigherBMI = markBMI > johnBMI;
+// const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// console.log(markBMI, johnBMI, markHigherBMI);
 
-if (markHigherBMI) {
-    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
-} else {
-    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
-}
+// if (markHigherBMI) {
+//     console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
+// } else {
+//     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
+// }
 
-markMass = 95;
-johnMass = 85;
-markHeight = 1.88;
-johnHeight = 1.76;
+// markMass = 95;
+// johnMass = 85;
+// markHeight = 1.88;
+// johnHeight = 1.76;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// console.log(markBMI, johnBMI, markHigherBMI);
 
-if (markHigherBMI) {
-    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
-} else {
-    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
-}
+// if (markHigherBMI) {
+//     console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
+// } else {
+//     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
+// }
+
+
+// TYPE CONVERSION AND COERCION
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 28);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+
+console.log('I am ' + 23 + ' years old');
+console.log('23' - "10" - 3);
