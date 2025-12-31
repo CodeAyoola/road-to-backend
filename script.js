@@ -245,22 +245,48 @@
 // Five Falsy Values
 // 1. 0, " ", underdefined, null, NaN
 
-console.log(Boolean(0));
-console.log(Boolean({}));
-console.log(Boolean(undefined));
-console.log(Boolean("Jonas"));
+// console.log(Boolean(0));
+// console.log(Boolean({}));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
 
-const money = 1;
-if (money) {
-    console.log(`Don't spend it all`)
+// const money = 1;
+// if (money) {
+//     console.log(`Don't spend it all`)
+// } else {
+//     console.log('You should get a job')
+// }
+
+// let height;
+
+// if (height) {
+//     console.log(`Yayy height is defined`)
+// } else {
+//     console.log(`Height is UNDEFINED`)
+// }
+
+
+// Equality Operator
+
+const age = 18;
+if (age === 18) console.log(`You just became an adult 😊`);
+
+// === is the strict equality operator, it does not do the type coercion
+
+const favourite = Number(prompt(`What's is your favourite number ?`));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log(`Cool 23 is an amazing number!`)
+} else if (favourite === 7) {
+    console.log(`7 is also a cool number`)
 } else {
-    console.log('You should get a job')
+    console.log(`Number is not 23 or 7`
+    )
 }
 
-let height;
-
-if (height) {
-    console.log(`Yayy height is defined`)
-} else {
-    console.log(`Height is UNDEFINED`)
+if (favourite !== 23) {
+    console.log
+        (`Why not the 23`)
 }
