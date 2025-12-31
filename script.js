@@ -169,22 +169,55 @@
 
 // TAKING DECISIONS IF ELSE STATEMENTS
 
-const age = 15;
+// const age = 15;
 
-if (age >= 18) {
-    console.log('Sarah can start driving license 🚗');
+// if (age >= 18) {
+//     console.log('Sarah can start driving license 🚗');
+// } else {
+//     const yearsLeft = 18 - age
+//     console.log(`Sarah is too young, wait another ${yearsLeft} years 😒`)
+// }
+
+// const birthYear = 1991;
+// let century;
+
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+
+// console.log(century)
+
+// Second Coding Challenge
+
+let markMass = 78;
+let johnMass = 92;
+let markHeight = 1.69;
+let johnHeight = 1.95;
+
+const markBMI = Math.trunc(markMass / (markHeight ** 2));
+const johnBMI = Math.trunc(johnMass / (johnHeight ** 2));
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+
+if (markHigherBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
 } else {
-    const yearsLeft = 18 - age
-    console.log(`Sarah is too young, wait another ${yearsLeft} years 😒`)
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
 }
 
-const birthYear = 1991;
-let century;
+markMass = 95;
+johnMass = 85;
+markHeight = 1.88;
+johnHeight = 1.76;
 
-if (birthYear <= 2000) {
-    century = 20;
+console.log(markBMI, johnBMI, markHigherBMI);
+
+if (markHigherBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`)
 } else {
-    century = 21;
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`)
 }
-
-console.log(century)
