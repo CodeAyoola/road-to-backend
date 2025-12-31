@@ -155,14 +155,36 @@
 
 // STRINGS AND TEMPLATE LITERALS
 
-const firstName = 'Jonas';
-const job = 'teacher';
+// const firstName = 'Jonas';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
+
+// const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old' + job + '!';
+
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear}, years old ${job}!`
+
+// console.log(jonas, jonasNew)
+
+
+// TAKING DECISIONS IF ELSE STATEMENTS
+
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age
+    console.log(`Sarah is too young, wait another ${yearsLeft} years 😒`)
+}
+
 const birthYear = 1991;
-const year = 2037;
+let century;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old' + job + '!';
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear}, years old ${job}!`
-
-console.log(jonas, jonasNew)
-
+console.log(century)
