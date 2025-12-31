@@ -225,16 +225,42 @@
 
 // TYPE CONVERSION AND COERCION
 
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 28);
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 28);
 
-console.log(Number('Jonas'));
-console.log(typeof NaN);
+// console.log(Number('Jonas'));
+// console.log(typeof NaN);
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
 // type coercion
 
-console.log('I am ' + 23 + ' years old');
-console.log('23' - "10" - 3);
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' - "10" - 3);
+
+
+// TRUTHY AND FALSY VALUES
+
+// Five Falsy Values
+// 1. 0, " ", underdefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean({}));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+
+const money = 1;
+if (money) {
+    console.log(`Don't spend it all`)
+} else {
+    console.log('You should get a job')
+}
+
+let height;
+
+if (height) {
+    console.log(`Yayy height is defined`)
+} else {
+    console.log(`Height is UNDEFINED`)
+}
