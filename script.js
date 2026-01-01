@@ -326,59 +326,103 @@
 
 // Your tasks:
 // 1. Calculate the average score for each team, using the test data below
-// 2. Compare the team's average scores to determine the winner of the competition, 
-// and print it to the console. Don't forget that there can be a draw, so test for that 
+// 2. Compare the team's average scores to determine the winner of the competition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
 // as well (draw means they have the same average score)
-// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
-// team only wins if it has a higher score than the other team, and the same time a 
-// score of at least 100 points. Hint: Use a logical operator to test for minimum 
+// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+// team only wins if it has a higher score than the other team, and the same time a
+// score of at least 100 points. Hint: Use a logical operator to test for minimum
 // score, as well as multiple else-if blocks 😉
-// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
-// both teams have the same score and both have a score greater or equal 100 
+// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+// both teams have the same score and both have a score greater or equal 100
 // points. Otherwise, no team wins the trophy
 // Test data:
 // § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-let averageDolphins = Math.trunc((96 + 108 + 89) / 3);
-let averageKoalas = Math.trunc((88 + 91 + 110) / 3);
+// let averageDolphins = Math.trunc((96 + 108 + 89) / 3);
+// let averageKoalas = Math.trunc((88 + 91 + 110) / 3);
 
-console.log(averageDolphins, averageKoalas)
+// console.log(averageDolphins, averageKoalas)
 
-if (averageDolphins > averageKoalas) {
-    console.log(`Dolphins wins 🏆`)
-} else if (averageKoalas > averageDolphins) {
-    console.log(`Koalas wins 🏆`)
+// if (averageDolphins > averageKoalas) {
+//     console.log(`Dolphins wins 🏆`)
+// } else if (averageKoalas > averageDolphins) {
+//     console.log(`Koalas wins 🏆`)
+// } else {
+//     `Both team tied`
+// }
+
+// averageDolphins = Math.trunc((97 + 112 + 101) / 3);
+// averageKoalas = Math.trunc((109 + 95 + 123) / 3);
+
+// console.log(averageDolphins, averageKoalas)
+
+// if (averageDolphins > averageKoalas && averageDolphins >= 100) {
+//     console.log(`Dolphins wins 🏆`)
+// } else if (averageKoalas > averageDolphins && averageKoalas >= 100) {
+//     console.log(`Koalas wins 🏆`)
+// } else {
+//     `No team wins the trophy`
+// }
+
+
+// averageDolphins = Math.trunc((80 + 112 + 101) / 3);
+// averageKoalas = Math.trunc((90 + 95 + 106) / 3);
+
+// console.log(averageDolphins, averageKoalas)
+
+// if (averageDolphins > averageKoalas && averageDolphins >= 100) {
+//     console.log(`Dolphins wins 🏆`)
+// } else if (averageKoalas > averageDolphins && averageKoalas >= 100) {
+//     console.log(`Koalas wins 🏆`)
+// } else if (averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas >= 100) {
+//     console.log(`Both teams tied`)
+// } else {
+//     console.log(`No one wins the trophy`)
+// }
+
+
+// The Switch Statement
+
+let day = 'sunday';
+
+// switch (day) {
+//     case 'monday': // day === 'monday
+//         console.log('Plan course structure');
+//         console.log('Go to coding meetup');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy your weekend');
+//         break;
+//     default:
+//         console.log('Not a valid day!');
+// }
+
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy your weekend');
 } else {
-    `Both team tied`
-}
-
-averageDolphins = Math.trunc((97 + 112 + 101) / 3);
-averageKoalas = Math.trunc((109 + 95 + 123) / 3);
-
-console.log(averageDolphins, averageKoalas)
-
-if (averageDolphins > averageKoalas && averageDolphins >= 100) {
-    console.log(`Dolphins wins 🏆`)
-} else if (averageKoalas > averageDolphins && averageKoalas >= 100) {
-    console.log(`Koalas wins 🏆`)
-} else {
-    `No team wins the trophy`
-}
-
-
-averageDolphins = Math.trunc((80 + 112 + 101) / 3);
-averageKoalas = Math.trunc((90 + 95 + 106) / 3);
-
-console.log(averageDolphins, averageKoalas)
-
-if (averageDolphins > averageKoalas && averageDolphins >= 100) {
-    console.log(`Dolphins wins 🏆`)
-} else if (averageKoalas > averageDolphins && averageKoalas >= 100) {
-    console.log(`Koalas wins 🏆`)
-} else if (averageDolphins === averageKoalas && averageDolphins >= 100 && averageKoalas >= 100) {
-    console.log(`Both teams tied`)
-} else {
-    console.log(`No one wins the trophy`)
+    console.log('Not a valid day!');
 }
